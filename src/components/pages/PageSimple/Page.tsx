@@ -47,7 +47,7 @@ export const Page: React.VFC = () => {
             these services out using Storybook.
           </li>
         </ul>
-        <p>
+        <p className="font-bold underline text-red-600">
           Get a guided tutorial on component-driven development at{" "}
           <a
             href="https://storybook.js.org/tutorials/"
