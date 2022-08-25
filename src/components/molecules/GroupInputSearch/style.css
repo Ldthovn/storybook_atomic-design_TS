@@ -1,0 +1,15 @@
+.GroupInputSearch {
+  display: flex;
+  justify-content: center;
+}
+
+.GroupInputSearch .Input {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.GroupInputSearch .storybook-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

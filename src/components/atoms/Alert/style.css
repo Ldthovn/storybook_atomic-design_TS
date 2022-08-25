@@ -1,0 +1,29 @@
+.Alert {
+  width: 300px;
+  margin: 20px auto;
+}
+.Alert-danger {
+  color: red;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.Alert-warning {
+  color: orange;
+  background: rgba(255, 166, 0, 0.1);
+}
+
+.Alert-success {
+  color: green;
+  background: rgba(0, 128, 0, 0.1);
+}
+
+.Alert-info {
+  color: blue;
+  background: rgba(0, 0, 255, 0.1);
+}
+
+.Alert-text {
+  border: 1px solid currentColor;
+  padding: 8px 15px;
+  display: block;
+}

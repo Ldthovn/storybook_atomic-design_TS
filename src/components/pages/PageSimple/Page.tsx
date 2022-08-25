@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Header } from "./../../organisms/Header/Header";
 import "./page.css";
@@ -8,15 +8,15 @@ type User = {
 };
 
 export const Page: React.VFC = () => {
-  const [user, setUser] = React.useState<User>();
+  const [user, setUser] = useState<User>();
 
   return (
     <article>
       <Header
         user={user}
-        onLogin={() => setUser({ name: "Jane Doe" })}
+        onLogin={() => setUser({ name: "Le Tho" })}
         onLogout={() => setUser(undefined)}
-        onCreateAccount={() => setUser({ name: "Jane Doe" })}
+        onCreateAccount={() => setUser({ name: "Le Tho" })}
       />
 
       <section>

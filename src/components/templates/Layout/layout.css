@@ -1,0 +1,16 @@
+.Layout {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.Layout-header,
+.Layout-footer {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.Layout-content {
+  margin: 0;
+  padding: 100px;
+  background-color: rgba(0, 0, 255, 0.3);
+  text-align: center;
+}
