@@ -2,12 +2,17 @@ import { Button } from "../../atoms/Button/Button";
 import { Input } from "../../atoms/Input";
 import "./style.css";
 
-interface GroupInputSearchProps {}
+interface GroupInputSearchProps {
+  placeholder?: string;
+}
 
-export const GroupInputSearch = ({ ...props }: GroupInputSearchProps) => {
+export const GroupInputSearch = ({
+  placeholder,
+  ...props
+}: GroupInputSearchProps) => {
   return (
     <div className="GroupInputSearch">
-      <Input />
+      <Input placeholder={placeholder} />
       <Button label="Search" primary />
     </div>
   );

@@ -18,10 +18,10 @@ interface LayoutProps {
 
 export const Layout = ({ className, style }: LayoutProps) => {
   return (
-    <article className={`Layout ${className}`} style={style}>
-      <header className="Layout-header">Header</header>
-      <div className="Layout-content">Content</div>
-      <footer className="Layout-footer">Footer</footer>
+    <article className={`Layout ${className} bg-lime-200`} style={style}>
+      <header className="Layout-header text-center px-3 py-5">Header</header>
+      <div className="Layout-content text-center py-24 bg-lime-300">Content</div>
+      <footer className="Layout-footer text-center px-3 py-5">Footer</footer>
     </article>
   );
 };

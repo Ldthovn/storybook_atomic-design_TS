@@ -12,4 +12,6 @@ const Template: ComponentStory<typeof GroupInputSearch> = (args) => (
 
 export const Default = Template.bind({});
 
-Default.args = {};
+Default.args = {
+  placeholder: "Group input search ",
+};

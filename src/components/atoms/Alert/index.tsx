@@ -18,7 +18,7 @@ interface AlertProps {
 
 export const Alert = ({ message, type, ...props }: AlertProps) => {
   return (
-    <div className={`Alert Alert-${type}`} {...props}>
+    <div className={`Alert w-72 my-5 mx-auto Alert-${type}`} {...props}>
       <span className="Alert-text">{message}</span>
     </div>
   );
