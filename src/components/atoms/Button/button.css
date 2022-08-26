@@ -3,26 +3,13 @@
   font-weight: 700;
   border: 0;
   cursor: pointer;
+  color: #fff;
   display: inline-block;
   border-radius: 2px;
   line-height: 1;
-}
-
-.storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
   transition: all 0.2s linear;
 }
 
-.storybook-button--primary:hover {
-  background-color: #1ea8fdd8;
-}
-
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-}
 .storybook-button--small {
   font-size: 12px;
   padding: 10px 16px;
@@ -39,4 +26,59 @@
 .block {
   display: block;
   width: 100%;
+}
+
+.storybook-button:hover {
+  box-shadow: 0 8px 25px -8px currentColor;
+}
+
+.primaryColor {
+  border-color: #7367f0;
+  background-color: #7367f0;
+}
+
+.primaryColor:hover {
+  box-shadow: 0 8px 25px -8px #7367f0;
+}
+
+.secondaryColor {
+  border-color: #82868b;
+  background-color: #82868b;
+}
+
+.secondaryColor:hover {
+  box-shadow: 0 8px 25px -8px #82868b;
+}
+
+.successColor {
+  border-color: #28c76f;
+  background-color: #28c76f;
+}
+
+.successColor:hover {
+  box-shadow: 0 8px 25px -8px #28c76f;
+}
+
+.dangerColor {
+  border-color: #ea5455;
+  background-color: #ea5455;
+}
+
+.warningColor {
+  border-color: #ff9f43;
+  background-color: #ff9f43;
+}
+.infoColor {
+  border-color: #00cfe8;
+  background-color: #00cfe8;
+}
+
+.darkColor {
+  border-color: #4b4b4b;
+  background-color: #4b4b4b;
+}
+
+.Outline {
+  border: 1px solid #7367f0;
+  color: #7367f0;
 }

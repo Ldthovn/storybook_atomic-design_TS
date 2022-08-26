@@ -10,4 +10,10 @@ const Template: ComponentStory<typeof Layout> = (args) => <Layout {...args} />;
 
 export const Basic = Template.bind({});
 
-Basic.args = {};
+Basic.args = {
+  children: "Text Banner",
+  contentContact: "Form contact",
+};
+
+// export const LayoutBanner = Template.bind({});
+// LayoutBanner.args = {};

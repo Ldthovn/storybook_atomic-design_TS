@@ -10,6 +10,6 @@ const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {
-  placeholder: "Basic use",
+  placeholder: "Place holder...",
   disabled: false,
 };

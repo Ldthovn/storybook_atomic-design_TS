@@ -1,0 +1,11 @@
+.Layout {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.imgLayout {
+  min-height: 200px;
+}
+
+.Banner-content {
+  background: #e9e8e8;
+}

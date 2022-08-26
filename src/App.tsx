@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Page />
-      <GroupInputSearch placeholder="Search by id..." />
+      {/* <GroupInputSearch placeholder="Search by id..." /> */}
     </div>
   );
 }

@@ -3,10 +3,6 @@ import "./button.css";
 
 interface ButtonProps {
   /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
    * What background color to use
    */
   backgroundColor?: string;
@@ -18,6 +14,7 @@ interface ButtonProps {
    * Button contents
    */
   label: string;
+  regime?: "Filled" | "Outline";
   /**
    * Option to fit button width to its parent width
    */
@@ -26,32 +23,65 @@ interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+  /**
+   * Is this the principal call to action on the page?
+   */
+  typeColor?:
+    | "primary"
+    | "secondary"
+    | "success"
+    | "danger"
+    | "warning"
+    | "info"
+    | "dark";
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const Button = ({
-  primary = false,
   size = "medium",
   backgroundColor,
   label,
   block = false,
+  typeColor = "primary",
+  regime = "Filled",
   ...props
 }: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
+  const modeTypeColor = (typeColor: any) => {
+    if (typeColor === "primary") {
+      return "primaryColor";
+    }
+    if (typeColor === "secondary") {
+      return "secondaryColor";
+    }
+    if (typeColor === "success") {
+      return "successColor";
+    }
+    if (typeColor === "danger") {
+      return "dangerColor";
+    }
+    if (typeColor === "warning") {
+      return "warningColor";
+    }
+    if (typeColor === "info") {
+      return "infoColor";
+    }
+    if (typeColor === "dark") {
+      return "darkColor";
+    }
+  };
   return (
     <button
       type="button"
+      style={{ backgroundColor }}
       className={[
         "storybook-button",
         `storybook-button--${size}`,
-        mode,
         block && "block",
+        regime !== "Outline" && modeTypeColor(typeColor),
+        regime,
       ].join(" ")}
-      style={{ backgroundColor }}
       {...props}
     >
       {label}

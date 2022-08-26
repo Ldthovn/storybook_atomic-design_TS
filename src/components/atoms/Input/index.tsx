@@ -6,6 +6,7 @@ interface InputProps {
    */
   disabled?: boolean;
   placeholder?: string;
+  value?: string;
 }
 
 /**
@@ -13,6 +14,18 @@ interface InputProps {
  *  text field. Keyboard and mouse can be used for providing or changing data.
  * */
 
-export const Input = ({ disabled, placeholder, ...props }: InputProps) => {
-  return <input className="Input" placeholder={placeholder} />;
+export const Input = ({
+  disabled,
+  placeholder,
+  value,
+  ...props
+}: InputProps) => {
+  return (
+    <input
+      disabled={disabled}
+      className="Input"
+      placeholder={placeholder}
+      value={value}
+    />
+  );
 };

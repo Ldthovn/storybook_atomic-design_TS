@@ -7,3 +7,8 @@
   font-size: 14px;
   outline: none;
 }
+
+.Input:disabled {
+  cursor: no-drop;
+  background: #d9d9d9;
+}

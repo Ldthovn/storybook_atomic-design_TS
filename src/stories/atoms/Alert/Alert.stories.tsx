@@ -10,6 +10,6 @@ const Template: ComponentStory<typeof Alert> = (args) => <Alert {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {
-  message: "What is this?",
+  message: "Good Morning! Start your day with some alerts.",
   type: "success",
 };

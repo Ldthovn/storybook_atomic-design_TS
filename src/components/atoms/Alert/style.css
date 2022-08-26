@@ -1,3 +1,10 @@
+.Alert {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .Alert-danger {
   color: red;
   background: rgba(255, 0, 0, 0.1);
@@ -19,7 +26,6 @@
 }
 
 .Alert-text {
-  border: 1px solid currentColor;
   padding: 8px 15px;
-  display: block;
+  display: inline-block;
 }

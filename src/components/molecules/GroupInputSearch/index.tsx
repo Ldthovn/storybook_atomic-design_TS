@@ -13,7 +13,7 @@ export const GroupInputSearch = ({
   return (
     <div className="GroupInputSearch">
       <Input placeholder={placeholder} />
-      <Button label="Search" primary />
+      <Button label="Search" />
     </div>
   );
 };
