@@ -34,6 +34,7 @@ interface ButtonProps {
     | "warning"
     | "info"
     | "dark";
+  type?: "button" | "submit" | "reset" | undefined;
 }
 
 /**
@@ -46,6 +47,7 @@ export const Button = ({
   block = false,
   typeColor = "primary",
   regime = "Filled",
+  type,
   ...props
 }: ButtonProps) => {
   const modeTypeColor = (typeColor: any) => {
@@ -73,7 +75,7 @@ export const Button = ({
   };
   return (
     <button
-      type="button"
+      type={type}
       style={{ backgroundColor }}
       className={[
         "storybook-button",

@@ -70,24 +70,3 @@
 .Layout-content {
   background-color: #fff;
 }
-
-.Page-form {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.Contact button {
-  margin-top: 20px;
-}
-
-.Page-form .Input {
-  width: 40%;
-  padding: 11px;
-}
-
-.alert {
-  display: none;
-}

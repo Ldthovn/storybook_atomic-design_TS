@@ -12,7 +12,7 @@ export const GroupInputSearch = ({
 }: GroupInputSearchProps) => {
   return (
     <div className="GroupInputSearch">
-      <Input placeholder={placeholder} />
+      <Input name="search" placeholderProp={placeholder} />
       <Button label="Search" />
     </div>
   );

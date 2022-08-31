@@ -1,7 +1,6 @@
 import React from "react";
 import { Alert } from "../../atoms/Alert";
-import { Button } from "../../atoms/Button/Button";
-import { Input } from "../../atoms/Input";
+import { Form } from "../../molecules/Form";
 import { Layout } from "../../templates/Layout/Layout";
 import "./page.css";
 
@@ -36,37 +35,12 @@ export const Page: React.VFC = () => {
     </div>
   );
 
-  const setNoneALert = () => {
-    const alert = document.getElementsByClassName(
-      "alert"
-    )[0] as HTMLElement | null;
-    if (alert != null) {
-      alert.style.display = "none";
-    }
-  };
-
-  const handleDangKy = () => {
-    const alert = document.getElementsByClassName(
-      "alert"
-    )[0] as HTMLElement | null;
-    if (alert != null) {
-      alert.style.display = "block";
-      setTimeout(setNoneALert, 2000);
-    }
-  };
-
   const renderContact = (
     <>
       <h2 className="Contact-title mb-10 text-3xl font-black">
         Contact Section
       </h2>
-      <div className="Page-form">
-        <Input placeholder="Username" />
-        <Input placeholder="Email" disabled value="abc@gmail.com" />
-        <Input placeholder="Number phone" />
-        <Input placeholder="Address" />
-      </div>
-      <Button typeColor="success" label="Đăng ký" onClick={handleDangKy} />
+      <Form />
     </>
   );
   return (

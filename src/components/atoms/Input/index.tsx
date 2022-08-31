@@ -1,12 +1,18 @@
+import { ChangeEventHandler } from "react";
 import "./style.css";
 
 interface InputProps {
   /**
    * Whether the input is disabled
    */
-  disabled?: boolean;
-  placeholder?: string;
-  value?: string;
+  disabledProp?: boolean;
+  placeholderProp?: string;
+  /**
+   * The input content value
+   * */ 
+  valueProp?: string;
+  onChangeProp?: ChangeEventHandler<HTMLInputElement>;
+  name: string;
 }
 
 /**
@@ -15,17 +21,21 @@ interface InputProps {
  * */
 
 export const Input = ({
-  disabled,
-  placeholder,
-  value,
+  disabledProp,
+  placeholderProp,
+  valueProp,
+  onChangeProp,
+  name,
   ...props
 }: InputProps) => {
   return (
     <input
-      disabled={disabled}
+      disabled={disabledProp}
       className="Input"
-      placeholder={placeholder}
-      value={value}
+      placeholder={placeholderProp}
+      value={valueProp}
+      name= {name}
+      onChange={onChangeProp}
     />
   );
 };
